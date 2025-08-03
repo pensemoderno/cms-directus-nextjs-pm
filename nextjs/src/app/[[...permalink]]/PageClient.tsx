@@ -4,15 +4,9 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import PageBuilder from '@/components/layout/PageBuilder';
 import { useVisualEditing } from '@/hooks/useVisualEditing';
-import { PageBlock } from '@/types/directus-schema';
 import { Button } from '@/components/ui/button';
 import { Pencil } from 'lucide-react';
 import { setAttr } from '@directus/visual-editing';
-
-interface PageClientProps {
-	sections: PageBlock[];
-	pageId?: string;
-}
 
 interface VisualEditingOptions {
 	customClass?: string;
